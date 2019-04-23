@@ -89,7 +89,8 @@ include `key` if `strict?` is true, defaulting to false."))
   (iterator [this] (.iterator contents))
   (size [this] (.size contents))
   (toArray [this] (.toArray contents))
-  (toArray [this a] (.toArray contents a))
+  (^"[Ljava.lang.Object;" toArray [this ^"[Ljava.lang.Object;" arr]
+   (.toArray contents arr))
 
   Sorted
   (comparator [this] (.comparator contents))
